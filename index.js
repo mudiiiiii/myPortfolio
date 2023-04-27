@@ -6,7 +6,7 @@ const port = 3005;
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
-const indexRouter = require("./routes/index")
+const indexRouter = require("./routes/route")
 const nodemailer = require('nodemailer');
 
 app.set('view engine', 'ejs');
