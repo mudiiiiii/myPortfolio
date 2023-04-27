@@ -59,6 +59,8 @@ fs.readdir(imagesDir, (err, files) => {
 app.use(express.static(path.join(__dirname, 'node_modules')));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static('views'));
+
 
 app.post('/send', (req, res) => {
   const { fname, lname, email, number, message } = req.body;
